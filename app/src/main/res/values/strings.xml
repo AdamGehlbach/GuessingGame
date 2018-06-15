@@ -6,5 +6,6 @@
     <string name="higher">Higher</string>
     <string name="number_range">1 - 100</string>
     <string name="button">Button</string>
+    <string name="winning_number">The winning number was %1$d</string>
 
 </resources>

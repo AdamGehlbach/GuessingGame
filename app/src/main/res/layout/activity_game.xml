@@ -11,48 +11,56 @@
         android:id="@+id/instructions_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:layout_marginTop="16dp"
         android:paddingLeft="8dp"
         android:paddingRight="8dp"
         android:text="@string/guess_a_number"
+        android:textColor="@android:color/black"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/guess_edittext" />
+        app:layout_constraintBottom_toTopOf="@+id/clue_textview"
+        app:layout_constraintEnd_toEndOf="@+id/clue_textview"
+        app:layout_constraintStart_toStartOf="@+id/clue_textview"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/clue_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:paddingLeft="8dp"
         android:paddingRight="8dp"
         android:text="@string/higher"
+        android:textColor="@color/darkred"
         android:textSize="30sp"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/instructions_textview" />
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/guess_edittext"
+        app:layout_constraintEnd_toEndOf="@+id/guess_edittext"
+        app:layout_constraintStart_toStartOf="@+id/guess_edittext" />
 
     <EditText
         android:id="@+id/guess_edittext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
         android:ems="10"
         android:hint="@string/number_range"
         android:inputType="number"
+        android:textAllCaps="true"
+        android:textColor="@android:color/holo_orange_light"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/subment_game_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/clue_textview" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/subment_game_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="232dp"
         android:text="@string/button"
+        android:textColor="@android:color/holo_green_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guess_edittext"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="231dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>
