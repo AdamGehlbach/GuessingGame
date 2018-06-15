@@ -4,6 +4,7 @@
     <string name="start">Start</string>
     <string name="guess_a_number">Guess a Number</string>
     <string name="higher">Higher</string>
+    <string name="lower">Lower</string>
     <string name="number_range">1 - 100</string>
     <string name="button">Button</string>
     <string name="winning_number">The winning number was %1$d</string>

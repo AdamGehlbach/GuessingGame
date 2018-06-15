@@ -84,7 +84,10 @@ public class GameActivity extends AppCompatActivity {
             numberOfGuesses++;
         }else if (userGuess > generatedNumber) {
             //TODO Update clue TextView to say lower, set visibility to VISIBLE, set guess EditText to "" and increment numberOfGuesses by 1
-            
+            clue.setText(R.string.lower);
+            clue.setVisibility(View.VISIBLE);
+            guess.setText("");
+            numberOfGuesses++;
         }
 
     }
