@@ -8,5 +8,10 @@
     <string name="number_range">1 - 100</string>
     <string name="button">Button</string>
     <string name="winning_number">The winning number was %1$d</string>
+    <string name="enter_number_1_100">Enter a number bewteen 1 and 100</string>
+    <string name="enter_number">Enter a number</string>
+    <string name="chances_left">You have %1$d chances left</string>
+    <string name="you_won">You Won!!!</string>
+    <string name="play_again">PLAY AGAIN</string>
 
 </resources>

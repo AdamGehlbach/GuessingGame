@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="16dp"
-        android:text="You Won!!!"
+        android:text="@string/you_won"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/number_textview"
         app:layout_constraintEnd_toEndOf="@+id/number_textview"
@@ -27,12 +27,12 @@
         android:text="@string/winning_number"
         android:textSize="16sp"
         android:visibility="invisible"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/winning_imageview"
+        app:layout_constraintStart_toStartOf="@+id/winning_imageview"
         app:layout_constraintTop_toBottomOf="@+id/results_textview" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/winning_imageview"
         android:layout_width="277dp"
         android:layout_height="277dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -44,14 +44,14 @@
         app:srcCompat="@drawable/thumb" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/restart_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:layout_marginTop="8dp"
-        android:text="PLAY AGAIN"
+        android:text="@string/play_again"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/winning_imageview" />
 </android.support.constraint.ConstraintLayout>
